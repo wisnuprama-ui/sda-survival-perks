@@ -58,15 +58,8 @@ public class Template02
             return Double.parseDouble(next());
         }
  
-        String nextLine() {
-            String str = "";
-            try {
-                str = br.readLine();
-            }
-            catch (IOException e) {
-                e.printStackTrace();
-            }
-            return str;
+        String nextLine() throws IOException {
+            return br.readLine();
         }
     }
 }
